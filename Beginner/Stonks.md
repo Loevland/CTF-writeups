@@ -16,3 +16,15 @@ Password: admin
 ```
 
 Which gives us a dashboard page.
+When attempting to access the settings page, we are given the message:
+
+> Only admins can view settings
+
+In the cookies of the site we can see:
+
+Name | Value | ... 
+--- | --- | ---
+Role | EndUser | ...
+Session | eyJzdGF0dXMiOiJ1c2VyIn0.YX8UKw.6l8j6V06zVc2bWGFEJZoccd6I3s | ...
+
+
