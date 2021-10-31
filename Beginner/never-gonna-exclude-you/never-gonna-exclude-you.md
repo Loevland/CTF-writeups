@@ -21,7 +21,7 @@ Which in ascii is:
 The site does not show all the text with the brute force, as it attempts other solution as well, but 
 we can just change the mode to xor with the key we just found.
 
-Giving us:
+Giving us some well known lyrics:
 ```
 We're no strangers to love
 You know the rules and so do I
