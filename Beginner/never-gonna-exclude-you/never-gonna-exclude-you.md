@@ -14,7 +14,7 @@ Pasting the hexadecimals gives us a most likely keylength of 11.
 
 Using the same page we can let the site attempt to brute-force the xor, also giving us the key:
 > 7269636b206173746c6579
-
+ 
 Which in ascii is:
 > rick astley
 
