@@ -10,5 +10,5 @@ By accessing the site we are presented with a login screen.
 We can either create a new account and login with that one, or attempt to
 log in with the credentials:
 
-Username: admin
-Password: admin
+```Username: admin
+Password: admin``
