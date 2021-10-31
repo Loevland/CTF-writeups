@@ -30,6 +30,8 @@ Session | eyJzdGF0dXMiOiJ1c2VyIn0.YX8UKw.6l8j6V06zVc2bWGFEJZoccd6I3s | ...
 We can change the role in the cookie to *Admin*, which gives us access to the settings page,
 with the flag: 
 
-> EPT{Cook1es_ar3_fun} 
+```
+EPT{Cook1es_ar3_fun} 
+```
 
 
