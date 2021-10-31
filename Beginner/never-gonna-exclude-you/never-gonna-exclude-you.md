@@ -10,7 +10,7 @@ We are given a txt file with a lot of hexadecimals:
 ```
 
 The name of the task mention xor, so let's try to find the key to xor with (using https://www.dcode.fr/xor-cipher)
-Pasting the hexadecimals gives us a most likely keylength of 11.
+Pasting the hexadecimals give us a most likely keylength of 11.
 
 Using the same page we can let the site attempt to brute-force the xor, also giving us the key:
 > 7269636b206173746c6579
