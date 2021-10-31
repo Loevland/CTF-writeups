@@ -2,7 +2,7 @@ Coming Soon!
 
 **Trivial Pursuit on steroids**
 
-> ategory: Misc
+> Category: Misc
 >
 > Can you provide the correct answer fast enough?
 > 
