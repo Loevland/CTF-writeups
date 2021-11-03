@@ -32,6 +32,8 @@ char flag[]  = "EPT{REDACTED}";
 ```
 
 We can also see that the *printf* function is missing something (example of the printf-function in the text for the task above).
+This makes us able to print values stored on the stack, where our flag is stored as well.
+
 I came over this writeup for a similar problem (https://nikhilh20.medium.com/format-string-exploit-ccefad8fd66b),
 which used the syntax
 > %n$s
