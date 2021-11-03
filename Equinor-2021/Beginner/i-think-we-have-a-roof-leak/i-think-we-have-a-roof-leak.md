@@ -25,7 +25,13 @@ int main() {
     return 0;
 }
 ```
-We can the that the *printf* function is missing something (example of printf in the text for the task above).
+Looking at the rest of the c-file we can see that the flag is stored on the stack.
+
+```c
+char flag[]  = "EPT{REDACTED}";
+```
+
+We can also see that the *printf* function is missing something (example of the printf-function in the text for the task above).
 I came over this writeup for a similar problem (https://nikhilh20.medium.com/format-string-exploit-ccefad8fd66b),
 which used the syntax
 > %n$s
