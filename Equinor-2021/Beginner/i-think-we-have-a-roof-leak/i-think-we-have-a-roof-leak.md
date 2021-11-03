@@ -29,9 +29,11 @@ We can the that the *printf* function is missing something (example of printf in
 I came over this writeup for a similar problem (https://nikhilh20.medium.com/format-string-exploit-ccefad8fd66b),
 which used the syntax
 > %n$s
+
 where n is an integer.
 
 Since this program isn't that big, we can try different numbers from 1 and up.
 > %7$s
+
 Gave us the flag
 > EPT{w00tw00t_you_found_m3}
