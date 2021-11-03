@@ -15,4 +15,5 @@ We are handed out *example.py* which we can add code to to solve the task
 After running the python script we get the flag
 
 > python3 nc1.py | nc io.ept.gg 30023
+> 
 > (Server down atm, so no flag yet)
