@@ -14,9 +14,8 @@ By looking at the **main**-function, we can see that the program uses gets(), wh
 We also see that there is a function, **win**, which prints out the flag if we can get it to run.
 We can overwrite the return address to return to the **win**-function, to print out the flag.
 
-#########################
+
 # Breaking the program  #
-#########################
 First we need to find out when the program breaks. We see that the buffer gets() writes into is 40 bytes. We try to write different amount of 'A's to find out exactly when the program breaks. 
 ```
 python3 -c "print('A'*60)" | ./pwn2
