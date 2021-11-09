@@ -32,8 +32,11 @@ We set a breakpoint in the program at the main function, and disassemble the win
 > disass win
 ```
 > 0x0000000000401314 <+0>:	endbr64 
+> 
 > 0x0000000000401318 <+4>:	push   %rbp
+> 
 > 0x0000000000401319 <+5>:	mov    %rsp,%rbp
+> 
 > 0x000000000040131c <+8>:	sub    $0x110,%rsp
 
 We see that the win-function has the address 0x401314, which is the value we want to write into the EIP-register.
