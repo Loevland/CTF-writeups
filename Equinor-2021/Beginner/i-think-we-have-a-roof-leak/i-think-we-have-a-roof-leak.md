@@ -1,4 +1,3 @@
-Coming Soon!
 **I think we have a roof leak.**
 
 > Category: Pwn
@@ -43,5 +42,5 @@ where n is an integer.
 Since this program isn't that big, we can try different numbers from 1 and up.
 > %7$s
 
-Gave us the flag
+That gave us the flag
 > EPT{w00tw00t_you_found_m3}
