@@ -7,13 +7,13 @@
 Vi får tildelt en *.apk* fil i lag med oppdragsteksten. Denne apk-filen kan vi unzippe for å få tilgang til filene som er brukt til å lage android appen. Inne blant filene finner vi to veldig interessante filer. Den ene filen er lokalisert i *assets* mappen, og er et tekstdokument some inneholder en url til en onion link. Den andre veldig interessant filen heter *classes2.dex*, og ved å reversere den med et tool som *jadx* finner vi følgende informasjon:
 ```java
 editor.putString("username", "user");
-editor.putString("password", rot13("5sn1sr80r6nnr7687p68sq9rrno2s899"));
+editor.putString("password", rot13("xxxxxxxx"));
 ```
-Vi har funnet et brukernavn **user** med passordet **5fa1fe80e6aae7687c68fd9eeab2f899** (Legg merke til at passordet fra filen må tar rot13 med for å få passordet). Dette passordet er også 2.1-flagget. Vi lagrer denne innlogginsinformasjonen til senere.
+Vi har funnet et brukernavn **user** med passordet **xxxxxxxx** (Legg merke til at passordet fra filen må tar rot13 med for å få passordet). Dette passordet er også 2.1-flagget. Vi lagrer denne innlogginsinformasjonen til senere.
 
 ## 2.2_blog_1
 Vi har fått i oppdragsteksten utdelt en link til en blogg med url-en *blog.utl*. Denne linken er bare mulig å bruke via terminalen inne på ctf-miljøet, så vi prøver å curl-e til denne siden. `curl "blog.utl"`. Responsen vi får tilbake vil redirecte oss til linken `blog.utl/auth/login`, så vi prøver å bruke curl på den linken. `curl "blog.utl/auth/login"`. I meta-dataen til HTML-siden vi får tilbake ligger flagget.
-`<meta name="FLAG_2.2" content="9b0a6183e51a4dde4fc97b724f94cf76">`
+`<meta name="FLAG_2.2" content="xxxxxxxx">`
 
 
 ## 2.3_blog_2
@@ -58,7 +58,7 @@ blogpost = {"title": "Mission Plan", "body": script}
 res = s.post("http://blog.utl/create", data=blogpost, cookies=cookie)
 s.close()
 ```
-I HTML-koden finner vi flagget `<h1> FLAG: 743757f80c10e8f2584793fb9d01af60 </h1>`
+I HTML-koden finner vi flagget `<h1> FLAG: xxxxxxxx </h1>`
 
 ## 2.4_webserver_1
 I HTML-koden vi får fra admin finner vi følgende interessante kodesnutt:
@@ -106,7 +106,7 @@ res = s.post("http://blog.utl/create", data=blogpost, cookies=cookie)
 s.close()
 ```
 
-Etter at vi har negradert versjonen til apache-serveren finner vi flagget i meta-tagen til responsen fra nettsiden. `curl "anvilshop.utl"` `<meta name="flag" content="00842a5bf49b12b9d0ac692d87e3c27d">`
+Etter at vi har negradert versjonen til apache-serveren finner vi flagget i meta-tagen til responsen fra nettsiden. `curl "anvilshop.utl"` `<meta name="flag" content="xxxxxxxx">`
 
 
 ## 2.5_webserver_2
@@ -133,7 +133,7 @@ ChallengeResponseAuthentication yes
 PermitRootLogin no
 UsePAM yes
 PasswordAuthentication no
-# FLAGG: 41892505a2143c980921bbc0bf93d3ca
+# FLAGG: xxxxxxxx
 ```
 Her refereres det til PAM (som er en slags alternativ måte å autentisere innlogginger på, som et slags passord. Denne krever at man kjenner til passordet og krypteringsmåten, og så er selve innloggingspassordet den krypterte versjonen).
 Vi kan laste ned denne *pam_custom.so* fila, og reversere den med ghidra for å finne ut hvordan den fungerer, og hva den gjør.
